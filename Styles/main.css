@@ -1,4 +1,8 @@
 /* ...existing code... */
+/* header背景颜色 */
+
+
+
 
 #nav {
     display: flex;
@@ -44,6 +48,12 @@
 
 /* ...existing code... */
 
+#header {
+    background-color: #E8CA95;
+}
+
+/* ...existing code... */
+
 #banner {
     position: relative;
     width: 100%;
@@ -64,6 +74,20 @@
 }
 
 /* ...existing code... */
+
+img[src="image/logo.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; /* 缩小图片 */
+}
+
+img[src="image/line.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px; /* 扩大图片 */
+}
 
 #link {
     text-align: center;
@@ -112,45 +136,4 @@
 
 /* ...existing code... */
 
-#main-front {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
 
-#news-left {
-    width: 258px;
-}
-
-#news-image {
-    width: 258px;
-    height: 357px;
-    background-color: #ccc; /* 占位符背景颜色 */
-    margin-bottom: 20px;
-}
-
-#news-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#news-right > div {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-#news-right a {
-    color: #8b4513; /* 深棕色 */
-    text-decoration: none; /* 去除下划线 */
-    font-size: 16px; /* 字体大小 */
-    margin-bottom: 10px;
-}
-
-#news-right a:hover {
-    text-decoration: underline; /* 悬停时显示下划线 */
-}
-
-/* ...existing code... */

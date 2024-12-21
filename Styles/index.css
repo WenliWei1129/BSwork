@@ -1,0 +1,120 @@
+
+
+/* 主页面布局 */
+#main-front {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* 新闻左侧布局 */
+#news-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* 新闻图片 */
+#news-image {
+    grid-column: 1 / 2;
+}
+
+/* 新闻文本 */
+#news-text {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* 新闻标题 */
+#news-titles {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 修改样式：新闻右侧布局 */
+#news-right {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/* 医院公告 */
+#news-notice {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 导航内容布局 */
+#nav-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #D9C098;
+    color: black;
+}
+
+#nav-content a {
+    color: black;
+    text-decoration: none;
+}
+
+/* main-middle背景颜色 */
+#main-middle {
+    background-color: #EFDAB5;
+}
+
+/* teach-content-hd横向排列 */
+#teach-content-hd {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D0BB96;
+    height: 50px; /* 增加高度 */
+}
+
+#teach-content-hd a {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #D0BB96;
+    color: black; /* 字体颜色改为黑色 */
+    font-size: 18px; /* 字体变大 */
+    text-decoration: none; /* 取消下划线 */
+    transition: background-color 0.3s;
+}
+
+#teach-content-hd a:hover {
+    background-color: #921812;
+}
+
+/* teach-content-bd布局 */
+#teach-content-bd {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: #E8CA95; /* 背景颜色 */
+}
+
+#teach-content-bd img {
+    width: 100%;
+    height: auto;
+}
+
+#teach-content-hd-title {
+    display: block;
+    font-size: 20px; /* 字体加大 */
+    font-weight: bold; /* 字体加粗 */
+}
+
+#teach-content-hd-text {
+    display: block;
+    margin-left: 10px; /* 预留出图片的位置 */
+    padding-left: 150px; /* 根据图片宽度调整 */
+}
+
+#teach-content-hd-text a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
