@@ -3,30 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>三七商品详情</title>
+    <script>
+        function updateTotal() {
+            const price = 100; // 假设单价为100元
+            const quantity = document.getElementById('quantity').value;
+            const total = price * quantity;
+            document.getElementById('total-price').innerText = '总价：' + total + '元';
+        }
+    </script>
 </head>
 <body>
-    <div id="header"></div>
-    <div id="nav"></div>
-    <div id="main-front">
-        <div id="introduction-nav"></div>
-        <div id="introduction-content"></div>
+    <div id="header">
+        <!-- logo和医院名称 -->
+        <img src="logo.png" alt="医院Logo">
+        <!-- 分割线 -->
+        <div id="parting-line"></div>
     </div>
-    <div id="main-middle">
-        <div id="doctor-title"></div>
-        <div id="doctor-picture"></div>
+    <div id="nav">
+        <div>
+            <a href="">首页</a>
+        </div>
+        <div>
+            <a href="">医院概况</a>
+            <div>
+                <a href="">医院简介</a>
+                <a href="">先进设备</a>
+                <a href="">资质荣誉</a>
+                <a href="">历史沿革</a>
+            </div>
+        </div>
+        <div>
+            <a href="">院务公开</a>
+            <div>
+                <a href="">医疗机构概况</a>
+                <a href="">医疗机构环境</a>
+                <a href="">医疗服务概况</a>
+                <a href="">行风廉政建设</a>
+            </div>
+        </div>
+        <div>
+            <a href="">新闻动态</a>
+            <div>
+                <a href="">新闻简讯</a>
+                <a href="">医疗讯息</a>
+                <a href="">媒体报道</a>
+                <a href="">医院公告</a>
+            </div>
+        </div>
+        <div>
+            <a href="">健康教育</a>
+            <div>
+                <a href="">疾病预防</a>
+                <a href="">养生食疗</a>
+                <a href="">健康处方</a>
+                <a href="">中医保健</a>
+            </div>
+        </div>
+        <div>
+            <a href="">医院文化</a>
+            <div>
+                <a href="">医护天地</a>
+                <a href="">文化生活</a>
+                <a href="">心灵驿站</a>
+            </div>
+        </div>
+        <div>
+            <a href="">视频影音</a>
+            <div>
+                <a href="">健康科普</a>
+                <a href="">中医频道</a>
+                <a href="">专题播报</a>
+            </div>
+        </div>
+        <div>
+            <a href="">党团建设</a>
+            <div>
+                <a href="">党建活动</a>
+                <a href="">专题教育</a>
+                <a href="">团支部建设</a>
+            </div>
+        </div>
+
     </div>
-    <div id="main-back">
-        <div id="sweet-title"></div>
-        <div id="sweet-left"></div>
-        <div id="sweet-right"></div>
-    </div>
-    <div id="footer">
-        <div id="footer-content">
-            <div id="link"></div>
-            <div id="footer-box"></div>
+    <div id="banner">
+        <img src="banner.jpg" alt="三七">
+    </div>   
+    <div id="main">
+        <!-- 可以跳转的导航条 -->
+        <div id="jump-nav">
+            “当前位置：”
+            <a href="index.html">首页</a>
+            <a href="chinese_medicine.html">中药介绍</a>
+            <a href="medicine_category.html">中药分类导航</a>
+            “>三七”
+        </div>
+        <!-- 这里插入中药图片 -->
+        <img src="sanqi.jpg" alt="三七">
+        <div id="describe">
+            <div>
+                <span>
+                    <h1>三七</h1>
+                    <h2>别名：田七，血参，盘龙七，金不换</h2>
+
+                </span>
+            </div>
+            <!-- 具体介绍 -->
+             "药用部分：为十字花科植物菘蓝的干燥根"
+             <br>
+             三七在中药界有着举足轻重的地位。清代医药学家赵学敏在《本纲目拾遗》中有云：“人参补气第一，三七补血第一，味同而功亦等，故称人参三七，为中药中之最珍贵者。” 三七性温，味甘微苦，入肝、胃经。其主要功效包括补血抗炎、活血化瘀，以及抗氧化和抗衰老。此外，三七还有许多其他药理作用，比如扩张血管、降低冠脉阻力、增加冠脉流量、加强和改善冠脉微循环、增加心肌的血流量等。这些作用使得三七在中药领域备受瞩目。
+             <br>
+             <br>
+             售卖地点：售卖部一楼
+             <br>
+            <div>
+                <img src="sale.jpg" alt="售卖安排">
+                "售卖安排"
+            </div>
+            <div>
+                <label for="quantity">数量：</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" onchange="updateTotal()">
+                <p id="total-price">总价：100元</p>
+                <button onclick="addToCart()">加入购物车</button>
+            </div>
+            <div id="reviews">
+                <h3>用户评价</h3>
+                <p>用户1：非常好的产品！</p>
+                <p>用户2：效果显著，值得购买。</p>
+                <!-- 更多用户评价 -->
+            </div>
+            
         </div>
     </div>
+    
+    <div id="footer">
+        <div id="footer-content">
+            <div id="link">
+                <h2>友情链接</h2>
+                <div id="ditail-link">
+                    <a href="http://www.zs-hospital.com">广东省中山市医院</a>
+                </div>
+
+            </div>
+            <div id="footer-box">
+                <img src="footer_logo.png" alt="医院Logo">
+                <div>
+                    <!-- 医院地址 -->
+                    <p>地址：广东省中山市东区博爱六路</p>
+                    <!-- 版权 -->
+                    <p>版权所有 © 2023 中山市医院</p>
+                </div>
+            </div>
+        </div>
 
 </body>
 </html>
