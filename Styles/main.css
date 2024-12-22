@@ -127,12 +127,11 @@ img[src="image/line.png"] {
 #footer-box div {
     display: flex;
     flex-direction: column;
+    align-items: center; /* 内容居中 */
+    text-align: center; /* 文字内容居中 */
 }
 
-#footer-box p {
-    margin: 5px 0; /* 调整文字间距 */
-    color: black; 
-}
+
 
 /* ...existing code... */
 
