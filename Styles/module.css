@@ -38,7 +38,7 @@
 
 #medicine-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* 一行放五个块 */
     gap: 20px;
 }
 
@@ -46,10 +46,12 @@
     display: grid;
     grid-template-rows: auto auto auto auto;
     gap: 8px;
-    background-color: #fff;
+    background-color:#E8C7A4;
     border: 1px solid #ddd;
     padding: 10px;
     perspective: 1000px;
+    width: 200px; /* 设置宽度 */
+    height: 200px; /* 设置高度 */
 }
 
 .specific-medicine-inner {
@@ -170,4 +172,10 @@
 
 #search-medicine span a:hover {
     text-decoration: underline;
+}
+
+.specific-medicine-front>span>a{
+    color: #834B41;
+    text-decoration: none;
+    display: block; /* 换行 */
 }
