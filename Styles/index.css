@@ -89,6 +89,7 @@ img[src="image/news.jpg"][alt=""] {
 #news-bottom img {
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
 }
 
 /* 导航内容布局 */
@@ -101,14 +102,28 @@ img[src="image/news.jpg"][alt=""] {
 }
 
 #nav-content a {
-    color: black;
+    color: #683600;
     text-decoration: none;
+}
+#nav-bottom {
+    overflow: hidden; /* 确保内容不会溢出 */
+}
+
+#nav-bottom img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
 }
 
 /* main-middle背景颜色 */
 #main-middle {
     background-color: #EFDAB5;
 }
+#nav-content a {
+    border: 2px solid  #683600;; /* 设置边框颜色和宽度 */
+    padding: 5px; /* 设置内边距 */
+    display: inline-block; /* 使元素成为行内块元素 */
+  }
 
 /* teach-content-hd横向排列 */
 #teach-content-hd {
@@ -134,35 +149,31 @@ img[src="image/news.jpg"][alt=""] {
 }
 
 /* teach-content-bd布局 */
+/* teach-content-bd布局 */
 #teach-content-bd {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    grid-template-columns: 1fr 2fr; /* 定义两列，第一列占1/3，第二列占2/3 */
+    gap: 10px; /* 设置列之间的间距 */
     background-color: #E8CA95; /* 背景颜色 */
 }
 
 #teach-content-bd img {
-    width: 100%;
-    height: auto;
+    grid-column: 1 / 2; /* 图片占据第一列 */
+    width: 680px; /* 设置图片宽度 */
+    height: auto; /* 保持图片的宽高比 */
 }
 
-#teach-content-hd-title {
-    display: block;
-    font-size: 20px; /* 字体加大 */
-    font-weight: bold; /* 字体加粗 */
-}
-
-#teach-content-hd-text {
-    display: block;
-    margin-left: 10px; /* 预留出图片的位置 */
-    padding-left: 150px; /* 根据图片宽度调整 */
+#teach-content-bd .text-content {
+    grid-column: 2 / 3; /* 文字内容占据第二列 */
 }
 
 #teach-content-hd-text a {
     display: block;
     margin-bottom: 5px;
-    color: black;
+    color: #8B4513;
     text-decoration: none;
+    padding-left: 250px; /* 让文字整体往右移动 */
+    font-size: 20px;
 }
 
 
