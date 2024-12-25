@@ -6,7 +6,7 @@
     <title>wwl</title>
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/index.css">
-
+    
 </head>
 <body>
     <div id="header">
@@ -87,38 +87,45 @@
 
     </div>
     <div id="banner">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>   
+        <img src="image/lunbo1.png" alt="">
+        <img src="image/lunbo2.png" alt="">
+        <img src="image/lunbo3.png" alt="">
+        <img src="image/lunbo4.png" alt="">
+    </div> 
+    <div id="news-top">
+        <img src="image/new-top.png" alt="">
+    </div>  
     <div id="main-front">
         <div id="news-left">
             <!-- 图片 -->
-            <div id="news-image"></div>
-            <!-- 时讯文本 -->
-            <div id="news-text">
-                <a href="">新闻简讯</a>
-                <a href="">医疗讯息</a>
-                <a href="">媒体报道</a>
-            </div>
+            <img id="news-image" src="image/news.jpg" alt="">
+            
+            
             <!-- 医院新闻标题 -->
             <div id="news-titles">
-                <a href="">医院成功完成首例心脏移植手术</a>
-                <a href="">新冠疫苗接种工作顺利开展</a>
-                <a href="">医院荣获全国先进单位称号</a>
-                <a href="">新生儿科成功救治早产儿</a>
-                <a href="">医院举办大型义诊活动</a>
-                <a href="">引进最新医疗设备提升诊疗水平</a>
-                <a href="">医院开展消防安全演练</a>
-                <a href="">医护人员积极参与无偿献血</a>
-                <a href="">医院举办健康知识讲座</a>
+                <a href="">1.医院成功完成首例心脏移植手术，患者康复良好</a>
+                <a href="">2.新冠疫苗接种工作顺利开展，市民积极响应</a>
+                <a href="">3.中医院引入最新CT设备，检查效率大幅提升</a>
+                <a href="">4.专家团队攻克罕见疾病，为患者带来新生希望</a>
+                <a href="">5.新生儿科护士24小时守护，助早产婴儿平稳出院 </a>
+                <a href="">6.医院举办大型义诊活动，服务超千名社区居民 </a>
+                <a href="">7.创新治疗方案显成效，癌症患者生存率显著提高</a>
+                <a href="">8.中医结合现代技术，帮助百岁老人重拾健康</a>
+                <a href="">9.全院职工献血活动，展现医疗团队责任与担当</a>
+                <a href="">10.骨科团队完成高难度手术，国际同行赞誉不断</a>
+                <a href="">11.医院荣获国家级卫生创新奖，为患者提供更优质服务</a>
+                <a href="">12.妇产科成功接生三胞胎，母婴平安引发广泛关注 </a>
+                <a href="">13.急诊科争分夺秒，挽救心脏骤停患者生命 </a>
+                <a href="">14.医护团队援助灾区，展现医者仁心与担当</a>
+                
+                
             </div>
         </div>
         <div id="news-right">
             <!-- 这里插入医院公告四个字的图片 -->
-            <p>医院公告</p>
+             <img src="image/yy-notice.png" alt="">
+             <img src="image/yy-notice2.png" alt="">
+            
             <!-- 医院公告文本 主要是采购这一类-->
             <div id="news-notice">
                 <a href="">采购公告：医疗设备采购项目</a>
@@ -126,10 +133,18 @@
                 <a href="">采购公告：办公用品采购项目</a>
                 <a href="">采购公告：信息系统维护服务采购项目</a>
                 <a href="">采购公告：医院装修工程项目</a>
+                <a href="">采购公告：实验室仪器采购项目</a>  
+                <a href="">采购公告：医护人员服装采购项目</a>
+
+                
             </div>
         </div>
-        <img src="" alt="">
+        
     </div>
+    <div id="news-bottom">
+        <img src="image/news-bottom.png" alt="">
+    </div>
+    
     <div id="main-middle">
         <div id="nav-title">
             <img src="" alt="">
@@ -216,6 +231,18 @@
             </div>
         </div>
     </div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('#banner img');
+        const totalImages = images.length;
 
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
+    </script>
 </body>
 </html>

@@ -1,9 +1,6 @@
 /* ...existing code... */
 /* header背景颜色 */
 
-
-
-
 #nav {
     display: flex;
     flex-direction: row;
@@ -44,6 +41,9 @@
     color: #8b4513; /* 深棕色 */
     text-decoration: none; /* 去除下划线 */
     font-size: 20px; /* 增加字体大小 */
+    position: relative;
+    z-index: 2; /* 设置层级 */
+    background-color: inherit; /* 背景颜色跟随父元素 */
 }
 
 /* ...existing code... */
@@ -57,7 +57,7 @@
 #banner {
     position: relative;
     width: 100%;
-    height: 300px; /* 根据需要调整高度 */
+    height: 500px; /* 根据需要调整高度 */
     overflow: hidden;
 }
 
@@ -130,8 +130,6 @@ img[src="image/line.png"] {
     align-items: center; /* 内容居中 */
     text-align: center; /* 文字内容居中 */
 }
-
-
 
 /* ...existing code... */
 
