@@ -124,7 +124,9 @@ img[src="image/news.jpg"][alt=""] {
     padding: 5px; /* 设置内边距 */
     display: inline-block; /* 使元素成为行内块元素 */
   }
-
+  #nav-content a:hover {
+    font-weight: bold; /* 鼠标悬停时字体变粗 */
+}
 /* teach-content-hd横向排列 */
 #teach-content-hd {
     display: flex;
@@ -148,7 +150,7 @@ img[src="image/news.jpg"][alt=""] {
     background-color: #921812;
 }
 
-/* teach-content-bd布局 */
+
 /* teach-content-bd布局 */
 #teach-content-bd {
     display: grid;
@@ -174,6 +176,9 @@ img[src="image/news.jpg"][alt=""] {
     text-decoration: none;
     padding-left: 250px; /* 让文字整体往右移动 */
     font-size: 20px;
+}
+#teach-content-hd-text a:hover {
+    font-weight: bold; /* 鼠标悬停时字体变粗 */
 }
 
 

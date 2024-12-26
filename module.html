@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>模块页</title>
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/module.css">
 </head>
@@ -87,11 +87,10 @@
 
     </div>
     <div id="banner">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="image/lunbo1.png" alt="">
+        <img src="image/lunbo2.png" alt="">
+        <img src="image/lunbo3.png" alt="">
+        <img src="image/lunbo4.png" alt="">
     </div>  
     <div id="main">
         <div id="search-medicine">
@@ -406,13 +405,27 @@
             </div>
             <div id="footer-box">
                 <!-- <img src="" alt=""> -->
-                <div>
-                    <!-- 医院地址 -->
+                <div id="footer-text">
+                    
                     <p>地址：浙江省温州市某某路10号</p>
                     <!-- 版权 -->
                     <p>版权所有 © 2024 温州市医院</p>
                 </div>
             </div>
         </div>
+    </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('#banner img');
+            const totalImages = images.length;
+    
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].classList.add('active');
+            }
+    
+            setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
+        </script>
 </body>
 </html>

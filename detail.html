@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三七商品详情</title>
+    <title>细节页</title>
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/detail.css">
     <script>
@@ -15,6 +16,7 @@
         }
     </script>
 </head>
+
 <body>
     <div id="header">
         <div><!-- logo和医院名称 -->
@@ -24,8 +26,8 @@
             <!-- 分割线 -->
             <img src="image/line.png" alt="">
         </div>
-        
-        
+
+
     </div>
     <div id="nav">
         <div>
@@ -94,12 +96,11 @@
 
     </div>
     <div id="banner">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>  
+        <img src="image/lunbo1.png" alt="">
+        <img src="image/lunbo2.png" alt="">
+        <img src="image/lunbo3.png" alt="">
+        <img src="image/lunbo4.png" alt="">
+    </div>
     <div id="main">
         <!-- 可以跳转的导航条 -->
         <div id="jump-nav">
@@ -109,7 +110,7 @@
             三七
         </div>
         <!-- 这里插入中药图片 -->
-        <img src="sanqi.jpg" alt="三七">
+        <img src="image/sanqi.jpg" alt="三七">
         <div id="describe">
             <div>
                 <span>
@@ -119,25 +120,29 @@
                 </span>
             </div>
             <!-- 具体介绍 -->
-             "药用部分：为十字花科植物菘蓝的干燥根"
-             <br>
-             三七在中药界有着举足轻重的地位。清代医药学家赵学敏在《本纲目拾遗》中有云：“人参补气第一，三七补血第一，味同而功亦等，故称人参三七，为中药中之最珍贵者。” 三七性温，味甘微苦，入肝、胃经。其主要功效包括补血抗炎、活血化瘀，以及抗氧化和抗衰老。此外，三七还有许多其他药理作用，比如扩张血管、降低冠脉阻力、增加冠脉流量、加强和改善冠脉微循环、增加心肌的血流量等。这些作用使得三七在中药领域备受瞩目。
-             <br>
-             <br>
-             售卖地点：售卖部一楼
-             <br>
-            <div>
-                <img src="sale.jpg" alt="售卖安排">
-                "售卖安排"
-            </div>
+            <br>
+            药用部分：为十字花科植物菘蓝的干燥根
+            <br>
+            <br>
+            三七在中药界有着举足轻重的地位。清代医药学家赵学敏在《本纲目拾遗》中有云：“人参补气第一，三七补血第一，味同而功亦等，故称人参三七，为中药中之最珍贵者。”
+            三七性温，味甘微苦，入肝、胃经。其主要功效包括补血抗炎、活血化瘀，以及抗氧化和抗衰老。此外，三七还有许多其他药理作用，比如扩张血管、降低冠脉阻力、增加冠脉流量、加强和改善冠脉微循环、增加心肌的血流量等。这些作用使得三七在中药领域备受瞩目。
+            <br>
+            <br>
+            售卖地点：售卖部一楼
+            <br>
             <div>
                 <label for="quantity">数量：</label>
                 <input type="number" id="quantity" name="quantity" value="1" min="1" onchange="updateTotal()">
                 <p id="total-price">总价：100元</p>
                 <button onclick="addToCart()">加入购物车</button>
             </div>
-            <div id="reviews">
-                <h3>用户评价</h3>
+
+
+        </div>
+        </div>
+        <div id="reviews">
+            
+            <div class="r1">
                 <p>用户1：非常好的产品！</p>
                 <p>用户2：效果显著，值得购买。</p>
                 <p>用户3：质量很好，包装也很精美。</p>
@@ -148,12 +153,21 @@
                 <p>用户8：会继续回购的。</p>
                 <p>用户9：客服很耐心，解答了很多问题。</p>
                 <p>用户10：非常满意的一次购物体验。</p>
-                <!-- 更多用户评价 -->
             </div>
-            
-        </div>
+            <div class="r2">
+                <p>用户11：产品质量非常好，值得信赖。</p>
+                <p>用户12：效果显著，家人都很满意。</p>
+                <p>用户13：包装精美，物流也很快。</p>
+                <p>用户14：客服服务态度很好，耐心解答问题。</p>
+                <p>用户15：性价比高，会继续回购。</p>
+                <p>用户16：使用后感觉效果不错，推荐。</p>
+                <p>用户17：朋友推荐的，果然没失望。</p>
+                <p>用户18：非常满意的一次购物体验。</p>
+                <p>用户19：产品效果很好，值得购买。</p>
+                <p>用户20：物流很快，包装完好无损。</p>
+            </div>
     </div>
-    
+
     <div id="footer">
         <div id="footer-content">
             <div id="link">
@@ -168,14 +182,29 @@
             </div>
             <div id="footer-box">
                 <!-- <img src="" alt=""> -->
-                <div>
-                    <!-- 医院地址 -->
+                <div id="footer-text">
+
                     <p>地址：浙江省温州市某某路10号</p>
                     <!-- 版权 -->
                     <p>版权所有 © 2024 温州市医院</p>
                 </div>
             </div>
         </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('#banner img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
+    </script>
 
 </body>
+
 </html>
