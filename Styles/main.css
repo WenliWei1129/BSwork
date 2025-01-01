@@ -1,9 +1,9 @@
-/* ...existing code... */
 /* header背景颜色 */
-body{
+body {
     background-color: #EFDAB5;
 }
 
+/* 导航栏样式 */
 #nav {
     display: flex;
     flex-direction: row;
@@ -49,14 +49,12 @@ body{
     background-color: inherit; /* 背景颜色跟随父元素 */
 }
 
-/* ...existing code... */
-
+/* header样式 */
 #header {
     background-color: #E8CA95;
 }
 
-/* ...existing code... */
-
+/* banner样式 */
 #banner {
     position: relative;
     width: 100%;
@@ -76,8 +74,7 @@ body{
     opacity: 1;
 }
 
-/* ...existing code... */
-
+/* logo图片样式 */
 img[src="image/logo.png"] {
     display: block;
     margin-left: auto;
@@ -85,6 +82,7 @@ img[src="image/logo.png"] {
     width: 500px; /* 缩小图片 */
 }
 
+/* line图片样式 */
 img[src="image/line.png"] {
     display: block;
     margin-left: auto;
@@ -92,6 +90,7 @@ img[src="image/line.png"] {
     width: 1000px; /* 扩大图片 */
 }
 
+/* 链接样式 */
 #link {
     text-align: center;
     background-color: #EED9B4; /* 背景颜色 */
@@ -102,6 +101,7 @@ img[src="image/line.png"] {
     color: #8b4513; /* 深棕色 */
 }
 
+/* 详细链接样式 */
 #ditail-link {
     display: flex;
     justify-content: space-around; /* 等距排列 */
@@ -114,6 +114,7 @@ img[src="image/line.png"] {
     font-size: 16px; /* 字体大小 */
 }
 
+/* 页脚样式 */
 #footer-box {
     display: grid;
     background-color: #D2B48C; /* 稍微深于link的背景颜色 */
@@ -123,7 +124,5 @@ img[src="image/line.png"] {
     text-align: center; /* 使文字居中 */
     color: #8B4513;
 }
-
-/* ...existing code... */
 
 

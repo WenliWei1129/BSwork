@@ -6,6 +6,7 @@
     <title>模块页</title>
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/module.css">
+    
 </head>
 <body>
     <div id="header">
@@ -16,8 +17,7 @@
             <!-- 分割线 -->
             <img src="image/line.png" alt="">
         </div>
-        
-        
+        <div id="current-time"></div> <!-- 添加显示当前时间的元素 -->
     </div>
     
     <div id="nav">
@@ -274,8 +274,8 @@
                         <a href="#"></a>
                         <span><a href="#">名称：三七</a></span><span><a href="#">购买单价：45元/g</a></span>
                     </div>
-                    <div class="specific-medicine-back">
-                        <img src="image/sanqi.jpg" alt="药材图片">
+                    <div class="specific-medicine-back" id="sanqi">
+                        <a href="detail.html"><img src="image/sanqi.jpg" alt="药材图片"></a>
                     </div>
                 </div>
             </div>
@@ -414,18 +414,41 @@
             </div>
         </div>
     </div>
-        <script>
-            let currentIndex = 0;
-            const images = document.querySelectorAll('#banner img');
-            const totalImages = images.length;
-    
-            function showNextImage() {
-                images[currentIndex].classList.remove('active');
-                currentIndex = (currentIndex + 1) % totalImages;
-                images[currentIndex].classList.add('active');
-            }
-    
-            setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
-        </script>
+    <script>
+        // 当前显示的图片索引
+        let currentIndex = 0;
+        // 获取所有轮播图图片元素
+        const images = document.querySelectorAll('#banner img');
+        // 图片总数
+        const totalImages = images.length;
+
+        // 显示下一张图片的函数
+        function showNextImage() {
+            // 移除当前图片的 'active' 类
+            images[currentIndex].classList.remove('active');
+            // 更新当前索引，循环显示图片
+            currentIndex = (currentIndex + 1) % totalImages;
+            // 为下一张图片添加 'active' 类
+            images[currentIndex].classList.add('active');
+        }
+
+        // 每隔 3000 毫秒（3 秒）调用一次 showNextImage 函数
+        setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
+
+        // 更新当前时间的函数
+        function updateTime() {
+            // 获取当前时间
+            const now = new Date();
+            // 将时间格式化为本地时间字符串
+            const timeString = now.toLocaleTimeString();
+            // 更新页面上显示时间的元素内容
+            document.getElementById('current-time').textContent = `当前时间：${timeString}`;
+        }
+
+        // 每隔 1000 毫秒（1 秒）调用一次 updateTime 函数
+        setInterval(updateTime, 1000); // 每秒更新一次时间
+        // 初始调用以显示当前时间
+        updateTime(); // 初始调用以显示当前时间
+    </script>
 </body>
 </html>

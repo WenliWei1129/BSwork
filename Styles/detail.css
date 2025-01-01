@@ -1,3 +1,4 @@
+/* 主容器样式 */
 #main {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -5,11 +6,18 @@
     padding: 20px;
 }
 
+#main>img {
+    width: 480px;
+    height: auto;
+}
+
+/* 跳转导航样式 */
 #jump-nav {
     grid-column: 1 / -1;
     margin-bottom: 20px;
 }
 
+/* 描述部分样式 */
 #describe {
     display: flex;
     flex-direction: column;
@@ -56,6 +64,7 @@
     background-color: #DD9A4B;
 }
 
+/* 评论部分样式 */
 #reviews {
     display: flex;
     gap: 20px;
@@ -71,11 +80,6 @@
     background-color: #D2B48C;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-#main>img {
-    width: 480px;
-    height: auto;
 }
 
 .r1 p:hover, .r2 p:hover {

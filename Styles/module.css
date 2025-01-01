@@ -1,9 +1,11 @@
+/* 主容器样式 */
 #main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
+/* 分类导航样式 */
 #classify {
     display: flex;
     justify-content: space-around;
@@ -36,6 +38,7 @@
     color: white;
 }
 
+/* 药品列表样式 */
 #medicine-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 一行放五个块 */
@@ -88,6 +91,15 @@
     margin: auto; /* 确保图片在中间 */
 }
 
+/* 三七药品样式 */
+#sanqi a {
+    width: 200px; /* 设置宽度与 .specific-medicine 相同 */
+    height: 200px; /* 设置高度与 .specific-medicine 相同 */
+    object-fit: cover; /* 确保图片覆盖整个区块 */
+    margin: auto; /* 确保图片在中间 */
+}
+
+/* 更多分类样式 */
 #more-classify {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -125,6 +137,7 @@
     /* 选中时文字颜色为白色 */
 }
 
+/* 搜索药品样式 */
 #search-medicine {
     display: flex;
     align-items: center;
@@ -178,4 +191,17 @@
     color: #834B41;
     text-decoration: none;
     display: block; /* 换行 */
+}
+
+/* 当前时间样式 */
+#current-time {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #834B41;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 1000; /* 确保显示在最上层 */
 }

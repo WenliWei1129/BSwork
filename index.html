@@ -233,16 +233,24 @@
         </div>
     </div>
     <script>
+        // 当前显示的图片索引
         let currentIndex = 0;
+        // 获取所有轮播图图片元素
         const images = document.querySelectorAll('#banner img');
+        // 图片总数
         const totalImages = images.length;
 
+        // 显示下一张图片的函数
         function showNextImage() {
+            // 移除当前图片的 'active' 类
             images[currentIndex].classList.remove('active');
+            // 更新当前索引，循环显示图片
             currentIndex = (currentIndex + 1) % totalImages;
+            // 为下一张图片添加 'active' 类
             images[currentIndex].classList.add('active');
         }
 
+        // 每隔 3000 毫秒（3 秒）调用一次 showNextImage 函数
         setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
     </script>
 </body>

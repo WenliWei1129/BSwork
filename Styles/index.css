@@ -5,6 +5,7 @@
     background-color: #EFDAB5; /* 修改背景颜色 */
 }
 
+/* 新闻顶部样式 */
 #news-top {
     overflow: hidden; /* 确保内容不会溢出 */
     margin-top: 40px; /* 调整这个值以设置与 #banner 的间隔 */
@@ -14,7 +15,6 @@
     width: 100%;
     height: auto;
 }
-
 
 /* 新闻左侧布局 */
 #news-left {
@@ -27,13 +27,11 @@ img[src="image/news.jpg"][alt=""] {
     grid-column: 1 ;
     width: 300px; /* 图片占据整行的1/3 */
     height: 450px;
-
 }
+
 #news-image {
     margin-left: 20px; /* 调整这个值以设置与左侧的距离 */
 }
-
-
 
 /* 新闻标题 */
 #news-titles {
@@ -53,8 +51,7 @@ img[src="image/news.jpg"][alt=""] {
     margin-bottom: 5px;
 }
 
-/* 修改样式：新闻右侧布局 */
-
+/* 新闻右侧布局 */
 #news-right {
     display: flex;
     flex-direction: column;
@@ -66,22 +63,24 @@ img[src="image/news.jpg"][alt=""] {
     width: 300px; /* 使两个图片同宽 */
     height: auto; /* 保持图片比例 */
     margin: 0; /* 确保图片之间没有间隔 */
-   
 }
+
 /* 医院公告 */
 #news-notice {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
 }
-#news-notice a{
+
+#news-notice a {
     color: gray;
     text-decoration: none;
     font-size: 18px; /* 字体变大 */
     margin-top: 5px; /* 调整这个值以设置与上方的距离 */
     margin-bottom: 5px;
-
 }
+
+/* 新闻底部样式 */
 #news-bottom {
     overflow: hidden; /* 确保内容不会溢出 */
 }
@@ -105,6 +104,18 @@ img[src="image/news.jpg"][alt=""] {
     color: #683600;
     text-decoration: none;
 }
+
+#nav-content a {
+    border: 2px solid  #683600; /* 设置边框颜色和宽度 */
+    padding: 5px; /* 设置内边距 */
+    display: inline-block; /* 使元素成为行内块元素 */
+}
+
+#nav-content a:hover {
+    font-weight: bold; /* 鼠标悬停时字体变粗 */
+}
+
+/* 导航底部样式 */
 #nav-bottom {
     overflow: hidden; /* 确保内容不会溢出 */
 }
@@ -119,15 +130,8 @@ img[src="image/news.jpg"][alt=""] {
 #main-middle {
     background-color: #EFDAB5;
 }
-#nav-content a {
-    border: 2px solid  #683600;; /* 设置边框颜色和宽度 */
-    padding: 5px; /* 设置内边距 */
-    display: inline-block; /* 使元素成为行内块元素 */
-  }
-  #nav-content a:hover {
-    font-weight: bold; /* 鼠标悬停时字体变粗 */
-}
-/* teach-content-hd横向排列 */
+
+/* 教学内容头部样式 */
 #teach-content-hd {
     display: flex;
     justify-content: space-between;
@@ -150,8 +154,7 @@ img[src="image/news.jpg"][alt=""] {
     background-color: #921812;
 }
 
-
-/* teach-content-bd布局 */
+/* 教学内容主体样式 */
 #teach-content-bd {
     display: grid;
     grid-template-columns: 1fr 2fr; /* 定义两列，第一列占1/3，第二列占2/3 */
@@ -169,6 +172,7 @@ img[src="image/news.jpg"][alt=""] {
     grid-column: 2 / 3; /* 文字内容占据第二列 */
 }
 
+/* 教学内容头部文字样式 */
 #teach-content-hd-text a {
     display: block;
     margin-bottom: 5px;
@@ -177,6 +181,7 @@ img[src="image/news.jpg"][alt=""] {
     padding-left: 250px; /* 让文字整体往右移动 */
     font-size: 20px;
 }
+
 #teach-content-hd-text a:hover {
     font-weight: bold; /* 鼠标悬停时字体变粗 */
 }
