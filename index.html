@@ -99,8 +99,6 @@
         <div id="news-left">
             <!-- 图片 -->
             <img id="news-image" src="image/news.jpg" alt="">
-            
-            
             <!-- 医院新闻标题 -->
             <div id="news-titles">
                 <a href="">1.医院成功完成首例心脏移植手术，患者康复良好</a>
@@ -117,15 +115,12 @@
                 <a href="">12.妇产科成功接生三胞胎，母婴平安引发广泛关注 </a>
                 <a href="">13.急诊科争分夺秒，挽救心脏骤停患者生命 </a>
                 <a href="">14.医护团队援助灾区，展现医者仁心与担当</a>
-                
-                
             </div>
         </div>
         <div id="news-right">
             <!-- 这里插入医院公告四个字的图片 -->
              <img src="image/yy-notice.png" alt="">
              <img src="image/yy-notice2.png" alt="">
-            
             <!-- 医院公告文本 主要是采购这一类-->
             <div id="news-notice">
                 <a href="">采购公告：医疗设备采购项目</a>
@@ -135,8 +130,6 @@
                 <a href="">采购公告：医院装修工程项目</a>
                 <a href="">采购公告：实验室仪器采购项目</a>  
                 <a href="">采购公告：医护人员服装采购项目</a>
-
-                
             </div>
         </div>
         
@@ -222,7 +215,6 @@
 
             </div>
             <div id="footer-box">
-                <!-- <img src="" alt=""> -->
                 <div id="footer-text">
                     
                     <p>地址：浙江省温州市某某路10号</p>
@@ -239,9 +231,9 @@
         const images = document.querySelectorAll('#banner img');
         // 图片总数
         const totalImages = images.length;
-
         // 显示下一张图片的函数
-        function showNextImage() {
+        function showNextImage() 
+        {
             // 移除当前图片的 'active' 类
             images[currentIndex].classList.remove('active');
             // 更新当前索引，循环显示图片
@@ -249,9 +241,8 @@
             // 为下一张图片添加 'active' 类
             images[currentIndex].classList.add('active');
         }
-
         // 每隔 3000 毫秒（3 秒）调用一次 showNextImage 函数
-        setInterval(showNextImage, 3000); // 将间隔时间改为 3000 毫秒
+        setInterval(showNextImage, 3000); 
     </script>
 </body>
 </html>

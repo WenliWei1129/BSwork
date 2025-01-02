@@ -104,7 +104,7 @@
             
         </div>
         <div id="classify">
-            <a href="#" class="selected">针灸科</a>
+            <a href="#">针灸科</a>
             <a href="#">推拿课</a>
             <a href="#">中内科</a>
             <a href="#">营养科</a>
@@ -445,8 +445,8 @@
             document.getElementById('current-time').textContent = `当前时间：${timeString}`;
         }
 
-        // 每隔 1000 毫秒（1 秒）调用一次 updateTime 函数
-        setInterval(updateTime, 1000); // 每秒更新一次时间
+        // 每隔 1 秒调用一次 updateTime 函数
+        setInterval(updateTime, 1000); 
         // 初始调用以显示当前时间
         updateTime(); // 初始调用以显示当前时间
     </script>

@@ -1,3 +1,9 @@
+/* 跳转导航样式 */
+#jump-nav {
+    /* 第一列到最后一列 */
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
 /* 主容器样式 */
 #main {
     display: grid;
@@ -11,11 +17,7 @@
     height: auto;
 }
 
-/* 跳转导航样式 */
-#jump-nav {
-    grid-column: 1 / -1;
-    margin-bottom: 20px;
-}
+
 
 /* 描述部分样式 */
 #describe {
@@ -40,6 +42,7 @@
     gap: 10px;
 }
 
+/* “数量”加粗 */
 #describe label {
     font-weight: bold;
 }
@@ -50,14 +53,13 @@
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-
+/* 加入购物车按钮 */
 #describe button {
     padding: 10px 20px;
     background-color: #834B41;
     color: white;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 #describe button:hover {
@@ -78,11 +80,9 @@
     margin: 5px 0;
     padding: 10px;
     background-color: #D2B48C;
-    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 .r1 p:hover, .r2 p:hover {
-    background-color: #FFD700;
     font-size: 18px;
 }

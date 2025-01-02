@@ -4,6 +4,75 @@
     grid-template-columns: 1fr;
     gap: 20px;
 }
+/* 搜索药品样式 */
+#search-medicine {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#jump-nav {
+    /* 把导航条放在本行最右侧 */
+    margin-left: auto; 
+}
+
+#search-medicine input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#search-medicine input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #834B41;
+    color: white;
+    /* 取消边框黑线 */
+    border: none;
+    border-radius: 10px;
+}
+
+#search-medicine input[type="submit"]:hover {
+    background-color: #DD9A4B;
+}
+
+/* 更多分类样式 */
+#more-classify {
+    display: grid;
+    align-items: start;
+    gap: 10px;
+}
+
+#more-classify>div:first-child {
+    grid-column: 1;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#more-classify>div:last-child {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+#more-classify a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+
+}
+
+#more-classify a:hover {
+    background-color: #DD9A4A;
+    /* 选中时背景色 */
+    color: white;
+    /* 选中时文字颜色为白色 */
+}
+
+
 
 /* 分类导航样式 */
 #classify {
@@ -11,7 +80,6 @@
     justify-content: space-around;
     padding: 10px;
     gap: 10px;
-    /* 添加空白 */
 }
 
 #classify a {
@@ -33,10 +101,7 @@
     color: white;
 }
 
-#classify a.selected {
-    background-color: #DD9A4B;
-    color: white;
-}
+
 
 /* 药品列表样式 */
 #medicine-list {
@@ -47,14 +112,11 @@
 
 .specific-medicine {
     display: grid;
-    grid-template-rows: auto auto auto auto;
     gap: 8px;
     background-color:#E8C7A4;
-    border: 1px solid #ddd;
     padding: 10px;
-    perspective: 1000px;
-    width: 200px; /* 设置宽度 */
-    height: 200px; /* 设置高度 */
+    width: 200px; 
+    height: 200px; 
 }
 
 .specific-medicine-inner {
@@ -73,119 +135,27 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    /* 隐藏背面图片 */
     backface-visibility: hidden;
 }
 
 .specific-medicine-back {
     transform: rotateY(180deg);
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #f8f8f8;
 }
 
 .specific-medicine-back img {
-    width: 200px; /* 设置宽度与 .specific-medicine 相同 */
-    height: 200px; /* 设置高度与 .specific-medicine 相同 */
-    object-fit: cover; /* 确保图片覆盖整个区块 */
-    margin: auto; /* 确保图片在中间 */
+    width: 200px; 
+    height: 200px; 
 }
 
 /* 三七药品样式 */
 #sanqi a {
-    width: 200px; /* 设置宽度与 .specific-medicine 相同 */
-    height: 200px; /* 设置高度与 .specific-medicine 相同 */
-    object-fit: cover; /* 确保图片覆盖整个区块 */
-    margin: auto; /* 确保图片在中间 */
+    width: 200px;
+    height: 200px; 
 }
 
-/* 更多分类样式 */
-#more-classify {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: start;
-    /* 修改为顶部对齐 */
-    gap: 10px;
-}
-
-#more-classify>div:first-child {
-    grid-column: 1;
-    font-weight: bold;
-    /* 加粗 */
-}
-
-#more-classify>div:last-child {
-    grid-column: 2;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-#more-classify a {
-    text-decoration: none;
-    color: black;
-    /* 未选中时文字颜色为黑色 */
-    padding: 5px 10px;
-    /* background-color: #f8f8f8; */
-}
-
-#more-classify a:hover,
-#more-classify a.selected {
-    background-color: #DD9A4A;
-    /* 选中时背景色 */
-    color: white;
-    /* 选中时文字颜色为白色 */
-}
-
-/* 搜索药品样式 */
-#search-medicine {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    justify-content: space-between; /* 添加此行 */
-}
-
-#jump-nav {
-    margin-left: auto; /* 添加此行 */
-}
-
-#search-medicine input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-#search-medicine input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #834B41;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#search-medicine input[type="submit"]:hover {
-    background-color: #DD9A4B;
-}
-
-#search-medicine span {
-    margin-left: auto;
-    font-size: 14px;
-    color: #666;
-}
-
-#search-medicine span a {
-    color: #834B41;
-    text-decoration: none;
-}
-
-#search-medicine span a:hover {
-    text-decoration: underline;
-}
 
 .specific-medicine-front>span>a{
     color: #834B41;

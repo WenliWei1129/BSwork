@@ -1,6 +1,28 @@
-/* header背景颜色 */
+/* 整个网页背景颜色 */
 body {
     background-color: #EFDAB5;
+}
+
+#header {
+    background-color: #E8CA95;
+}
+
+/* logo图片样式 */
+img[src="image/logo.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* 调整图片大小 */
+    width: 500px; 
+}
+
+/* line图片样式 */
+img[src="image/line.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* 调整图片大小 */
+    width: 1000px; 
 }
 
 /* 导航栏样式 */
@@ -23,13 +45,12 @@ body {
     top: 100%;
     left: 0;
     flex-direction: column;
-    background-color: #d2b48c; /* 深棕色 */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #d2b48c; 
     width: 100%;
 }
 
 #nav > div:hover {
-    background-color: #8b4513; /* 红棕色 */
+    background-color: #8b4513; 
 }
 
 #nav > div:hover > div {
@@ -41,18 +62,17 @@ body {
 }
 
 #nav a {
-    color: #8b4513; /* 深棕色 */
-    text-decoration: none; /* 去除下划线 */
-    font-size: 20px; /* 增加字体大小 */
+    color: #8b4513; 
+    text-decoration: none; 
+    font-size: 20px; 
     position: relative;
-    z-index: 2; /* 设置层级 */
-    background-color: inherit; /* 背景颜色跟随父元素 */
+    /* 设置层级 */
+    z-index: 2; 
+    /* 背景颜色跟随父元素 */
+    background-color: inherit; 
 }
 
-/* header样式 */
-#header {
-    background-color: #E8CA95;
-}
+
 
 /* banner样式 */
 #banner {
@@ -74,21 +94,7 @@ body {
     opacity: 1;
 }
 
-/* logo图片样式 */
-img[src="image/logo.png"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px; /* 缩小图片 */
-}
 
-/* line图片样式 */
-img[src="image/line.png"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px; /* 扩大图片 */
-}
 
 /* 链接样式 */
 #link {
@@ -114,14 +120,14 @@ img[src="image/line.png"] {
     font-size: 16px; /* 字体大小 */
 }
 
-/* 页脚样式 */
+
 #footer-box {
     display: grid;
-    background-color: #D2B48C; /* 稍微深于link的背景颜色 */
+    background-color: #D2B48C; 
 }
 
 #footer-text p {
-    text-align: center; /* 使文字居中 */
+    text-align: center; 
     color: #8B4513;
 }
 
